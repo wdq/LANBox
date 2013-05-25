@@ -729,7 +729,7 @@
     
 // This code is commented out because it's a work in progress. 
     
-    /* if ([currentType isEqualToString:@"txt"]) {
+     if ([currentType isEqualToString:@"txt"]) {
         
        NSString *result = [[NSString alloc] initWithData:thedata encoding:NSASCIIStringEncoding];
 
@@ -762,7 +762,7 @@
             
             [documentInteractionController presentPreviewAnimated:YES];
         }  
-    } */
+    } 
     
 }
 
