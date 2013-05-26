@@ -64,6 +64,10 @@
     clickSound = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     [clickSound prepareToPlay];
     
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    [self.filesTableView addSubview:refreshControl];
+    
     // Detect if the app has ever been used before. If it has then just continue starting up.
     
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"])
@@ -393,7 +397,21 @@
         NSString *updatedURLResult = [urlResult stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
 
         [self.directoryArray addObject:[Directory fileName:updatedfilenamestring fileType:typeresult fileURL:updatedURLResult]];
+        
+        NSLog(@"filename: %@", updatedfilenamestring);
+        NSLog(@"filetype: %@", typeresult);
+        NSLog(@"fileurl: %@", updatedURLResult);
+
     }
+    
+    NSLog(@"array: %@", self.directoryArray);
+    
+    //NSUInteger indexObject = [self.directoryArray indexOfObject: @"index.php"];
+    
+    //[self.directoryArray removeObjectAtIndex:indexObject];
+    
+    [self.directoryArray removeObject:[Directory fileName:@"index.php" fileType:@"php" fileURL:@"http://dev.quade.co/index.php"]];
+
 }
 
 
@@ -727,7 +745,6 @@
         }  
     } 
     
-// This code is commented out because it's a work in progress. 
     
      if ([currentType isEqualToString:@"txt"]) {
         
@@ -828,6 +845,15 @@
     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath];
     clickSound = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     [clickSound prepareToPlay];
+}
+
+// This method handles the pull to refresh in the table view. It is all defined in the viewDidLoad. 
+
+- (void)refresh:(UIRefreshControl *)refreshControl
+{
+    [self applicationDidUpdateDirectory];
+    [filesTableView reloadData];
+    [refreshControl endRefreshing];
 }
 
 @end
