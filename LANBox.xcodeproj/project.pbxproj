@@ -47,6 +47,11 @@
 		51E7E02117382F800054BA5A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E7E02017382F800054BA5A /* CFNetwork.framework */; };
 		51E7E02317382F8A0054BA5A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E7E02217382F8A0054BA5A /* Security.framework */; };
 		51E7E02517382F920054BA5A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E7E02417382F920054BA5A /* QuartzCore.framework */; };
+		A7D4C1A21751AA5D002EDDEB /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4C1A11751AA5D002EDDEB /* libAppLovinSdk.a */; };
+		A7D4C1A41751AA6E002EDDEB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4C1A31751AA6E002EDDEB /* AdSupport.framework */; };
+		A7D4C1A61751AA74002EDDEB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4C1A51751AA74002EDDEB /* CoreTelephony.framework */; };
+		A7D4C1A81751AA7C002EDDEB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4C1A71751AA7C002EDDEB /* SystemConfiguration.framework */; };
+		A7D4C1AA1751AA82002EDDEB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4C1A91751AA82002EDDEB /* StoreKit.framework */; };
 		A7EE9A8E1748229F00DC52DF /* HelpCelliPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = A7EE9A8A1748229F00DC52DF /* HelpCelliPhone.png */; };
 		A7EE9A8F1748229F00DC52DF /* FeedbackCelliPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = A7EE9A8B1748229F00DC52DF /* FeedbackCelliPhone.png */; };
 		A7EE9A901748229F00DC52DF /* ReportCelliPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = A7EE9A8C1748229F00DC52DF /* ReportCelliPhone.png */; };
@@ -122,6 +127,22 @@
 		51E7E02017382F800054BA5A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		51E7E02217382F8A0054BA5A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		51E7E02417382F920054BA5A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A7D4C1A11751AA5D002EDDEB /* libAppLovinSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppLovinSdk.a; path = LANBox/libAppLovinSdk.a; sourceTree = "<group>"; };
+		A7D4C1A31751AA6E002EDDEB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A7D4C1A51751AA74002EDDEB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A7D4C1A71751AA7C002EDDEB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A7D4C1A91751AA82002EDDEB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A7D4C1AC1751AB5D002EDDEB /* ALAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
+		A7D4C1AD1751AB5D002EDDEB /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
+		A7D4C1AE1751AB5D002EDDEB /* ALAdLoadDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAdLoadDelegate.h; sourceTree = "<group>"; };
+		A7D4C1AF1751AB5D002EDDEB /* ALAdService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAdService.h; sourceTree = "<group>"; };
+		A7D4C1B01751AB5D002EDDEB /* ALAdSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAdSize.h; sourceTree = "<group>"; };
+		A7D4C1B11751AB5D002EDDEB /* ALAdUpdateDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAdUpdateDelegate.h; sourceTree = "<group>"; };
+		A7D4C1B21751AB5D002EDDEB /* ALAdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAdView.h; sourceTree = "<group>"; };
+		A7D4C1B31751AB5D002EDDEB /* ALInterstitialAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALInterstitialAd.h; sourceTree = "<group>"; };
+		A7D4C1B41751AB5D002EDDEB /* ALSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALSdk.h; sourceTree = "<group>"; };
+		A7D4C1B51751AB5D002EDDEB /* ALSdkSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALSdkSettings.h; sourceTree = "<group>"; };
+		A7D4C1B61751AB5D002EDDEB /* ALTargetingData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTargetingData.h; sourceTree = "<group>"; };
 		A7EE9A8A1748229F00DC52DF /* HelpCelliPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelpCelliPhone.png; sourceTree = "<group>"; };
 		A7EE9A8B1748229F00DC52DF /* FeedbackCelliPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FeedbackCelliPhone.png; sourceTree = "<group>"; };
 		A7EE9A8C1748229F00DC52DF /* ReportCelliPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReportCelliPhone.png; sourceTree = "<group>"; };
@@ -152,6 +173,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D4C1AA1751AA82002EDDEB /* StoreKit.framework in Frameworks */,
+				A7D4C1A81751AA7C002EDDEB /* SystemConfiguration.framework in Frameworks */,
+				A7D4C1A61751AA74002EDDEB /* CoreTelephony.framework in Frameworks */,
+				A7D4C1A41751AA6E002EDDEB /* AdSupport.framework in Frameworks */,
 				51E7E02517382F920054BA5A /* QuartzCore.framework in Frameworks */,
 				51E7E02317382F8A0054BA5A /* Security.framework in Frameworks */,
 				51E7E02117382F800054BA5A /* CFNetwork.framework in Frameworks */,
@@ -160,6 +185,7 @@
 				51E7DFEB17382DB90054BA5A /* UIKit.framework in Frameworks */,
 				51E7DFED17382DB90054BA5A /* Foundation.framework in Frameworks */,
 				51E7DFEF17382DB90054BA5A /* CoreGraphics.framework in Frameworks */,
+				A7D4C1A21751AA5D002EDDEB /* libAppLovinSdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +248,11 @@
 		51E7DFE917382DB90054BA5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7D4C1AB1751AB49002EDDEB /* AppLovin */,
+				A7D4C1A91751AA82002EDDEB /* StoreKit.framework */,
+				A7D4C1A71751AA7C002EDDEB /* SystemConfiguration.framework */,
+				A7D4C1A51751AA74002EDDEB /* CoreTelephony.framework */,
+				A7D4C1A31751AA6E002EDDEB /* AdSupport.framework */,
 				51E7E02417382F920054BA5A /* QuartzCore.framework */,
 				51E7E02217382F8A0054BA5A /* Security.framework */,
 				51E7E02017382F800054BA5A /* CFNetwork.framework */,
@@ -283,6 +314,25 @@
 				51E7E01717382F0E0054BA5A /* Computer.m */,
 			);
 			name = "Cell Objects";
+			sourceTree = "<group>";
+		};
+		A7D4C1AB1751AB49002EDDEB /* AppLovin */ = {
+			isa = PBXGroup;
+			children = (
+				A7D4C1A11751AA5D002EDDEB /* libAppLovinSdk.a */,
+				A7D4C1AC1751AB5D002EDDEB /* ALAd.h */,
+				A7D4C1AD1751AB5D002EDDEB /* ALAdDisplayDelegate.h */,
+				A7D4C1AE1751AB5D002EDDEB /* ALAdLoadDelegate.h */,
+				A7D4C1AF1751AB5D002EDDEB /* ALAdService.h */,
+				A7D4C1B01751AB5D002EDDEB /* ALAdSize.h */,
+				A7D4C1B11751AB5D002EDDEB /* ALAdUpdateDelegate.h */,
+				A7D4C1B21751AB5D002EDDEB /* ALAdView.h */,
+				A7D4C1B31751AB5D002EDDEB /* ALInterstitialAd.h */,
+				A7D4C1B41751AB5D002EDDEB /* ALSdk.h */,
+				A7D4C1B51751AB5D002EDDEB /* ALSdkSettings.h */,
+				A7D4C1B61751AB5D002EDDEB /* ALTargetingData.h */,
+			);
+			name = AppLovin;
 			sourceTree = "<group>";
 		};
 		A7EE9A921749138600DC52DF /* Tutorial */ = {
@@ -569,6 +619,14 @@
 				GCC_PREFIX_HEADER = "LANBox/LANBox-Prefix.pch";
 				INFOPLIST_FILE = "LANBox/LANBox-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LANBox\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -581,6 +639,14 @@
 				GCC_PREFIX_HEADER = "LANBox/LANBox-Prefix.pch";
 				INFOPLIST_FILE = "LANBox/LANBox-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LANBox\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

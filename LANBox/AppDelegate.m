@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ALSdk.h"
 
 @implementation AppDelegate
 
@@ -102,6 +103,8 @@
 {
     [self customizeAppearance];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    
+    [ALSdk initializeSdk];
     return YES;
 }
 							
