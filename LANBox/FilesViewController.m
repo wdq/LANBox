@@ -260,17 +260,17 @@
 
     if ([currentType isEqualToString:@"Web Server"]) {
         
-        currentComputer = [NSString stringWithFormat:@"%@%@%@", @"http://", currentComputer, webPath];
+        currentComputer = [NSString stringWithFormat:@"%@%@%@%@%@%@", @"http://", @"admin:", currentPassword, @"@", currentComputer, webPath];
     }
     
     if ([currentType isEqualToString:@"Mac OS X"]) {
         
-        currentComputer = [NSString stringWithFormat:@"%@%@%@%@", @"http://", currentComputer, @".local", webPath];
+        currentComputer = [NSString stringWithFormat:@"%@%@%@%@%@%@%@", @"http://", @"admin:", currentPassword, @"@", currentComputer, @".local", webPath];
     }
     
     if ([currentType isEqualToString:@"Windows"]) {
         
-        currentComputer = [NSString stringWithFormat:@"%@%@%@", @"http://", currentComputer, webPath];
+        currentComputer = [NSString stringWithFormat:@"%@%@%@%@%@%@", @"http://", @"admin:", currentPassword, @"@", currentComputer, webPath];
     }
     
     [self applicationDidUpdateDirectory];
