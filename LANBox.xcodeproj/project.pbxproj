@@ -47,6 +47,8 @@
 		51E7E02117382F800054BA5A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E7E02017382F800054BA5A /* CFNetwork.framework */; };
 		51E7E02317382F8A0054BA5A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E7E02217382F8A0054BA5A /* Security.framework */; };
 		51E7E02517382F920054BA5A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E7E02417382F920054BA5A /* QuartzCore.framework */; };
+		A7C2E327175A4CE5009AC5E0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A7C2E326175A4CE5009AC5E0 /* LICENSE */; };
+		A7C2E329175A4DD6009AC5E0 /* server.py in Resources */ = {isa = PBXBuildFile; fileRef = A7C2E328175A4DD6009AC5E0 /* server.py */; };
 		A7D4C1A21751AA5D002EDDEB /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4C1A11751AA5D002EDDEB /* libAppLovinSdk.a */; };
 		A7D4C1A41751AA6E002EDDEB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4C1A31751AA6E002EDDEB /* AdSupport.framework */; };
 		A7D4C1A61751AA74002EDDEB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4C1A51751AA74002EDDEB /* CoreTelephony.framework */; };
@@ -127,6 +129,8 @@
 		51E7E02017382F800054BA5A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		51E7E02217382F8A0054BA5A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		51E7E02417382F920054BA5A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A7C2E326175A4CE5009AC5E0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = LANBox/LICENSE; sourceTree = "<group>"; };
+		A7C2E328175A4DD6009AC5E0 /* server.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = server.py; sourceTree = "<group>"; };
 		A7D4C1A11751AA5D002EDDEB /* libAppLovinSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppLovinSdk.a; path = LANBox/libAppLovinSdk.a; sourceTree = "<group>"; };
 		A7D4C1A31751AA6E002EDDEB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		A7D4C1A51751AA74002EDDEB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -234,6 +238,8 @@
 				51E7DFF017382DB90054BA5A /* LANBox */,
 				51E7DFE917382DB90054BA5A /* Frameworks */,
 				51E7DFE717382DB90054BA5A /* Products */,
+				A7C2E32A175A4DDC009AC5E0 /* Desktop Apps */,
+				A7C2E326175A4CE5009AC5E0 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -314,6 +320,14 @@
 				51E7E01717382F0E0054BA5A /* Computer.m */,
 			);
 			name = "Cell Objects";
+			sourceTree = "<group>";
+		};
+		A7C2E32A175A4DDC009AC5E0 /* Desktop Apps */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2E328175A4DD6009AC5E0 /* server.py */,
+			);
+			name = "Desktop Apps";
 			sourceTree = "<group>";
 		};
 		A7D4C1AB1751AB49002EDDEB /* AppLovin */ = {
@@ -505,6 +519,8 @@
 				A7EE9AB71749CBD600DC52DF /* SettingsiPhoneLandscape.png in Resources */,
 				A7EE9AB81749CBD600DC52DF /* SaveComputeriPhoneLandscape.png in Resources */,
 				A7EE9ABA1749D2A900DC52DF /* click.wav in Resources */,
+				A7C2E327175A4CE5009AC5E0 /* LICENSE in Resources */,
+				A7C2E329175A4DD6009AC5E0 /* server.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
