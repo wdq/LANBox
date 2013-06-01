@@ -269,7 +269,7 @@
 
     if ([currentType isEqualToString:@"Web Server"]) {
         
-        currentComputer = [NSString stringWithFormat:@"%@%@%@%@%@%@%@", @"http://", @"admin:", currentPassword, @"@", currentComputer, @":58077", webPath];
+        currentComputer = [NSString stringWithFormat:@"%@%@%@%@%@%@%@", @"http://", @"admin:", currentPassword, @"@", currentComputer, @":80", webPath];
     }
     
     if ([currentType isEqualToString:@"Mac OS X"]) {
@@ -631,9 +631,10 @@
         
         self.currentType = [[directoryArray objectAtIndex:[indexPath row]] fileType];
     }
-
     
-    if ([[[directoryArray objectAtIndex:[indexPath row]] fileType] isEqualToString:@""]) {
+    // This part currently only supports the bundled Python web server.
+    
+    if ([[[directoryArray objectAtIndex:[indexPath row]] fileType] isEqualToString:@"/"]) {
         
         NSLog(@"Directory selected");
         
@@ -652,7 +653,7 @@
         
         if ([currentType isEqualToString:@"Mac OS X"]) {
             
-            currentComputer = [NSString stringWithFormat:@"%@%@%@", selectedURL, @".local", @"/"];
+            currentComputer = [NSString stringWithFormat:@"%@%@", selectedURL, @"/"];
         }
         
         if ([currentType isEqualToString:@"Windows"]) {
@@ -666,6 +667,8 @@
         NSLog(@"currentComputer files = %@", currentComputer);
         [filesTableView reloadData];
     }
+    
+    
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: FALSE]; 
 
